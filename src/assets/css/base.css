@@ -1,0 +1,12 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.router-link-exact-active{
+    font-weight: bold;
+    color: black;
+}
+
+.btn-success, .badge-success{
+    background-color: #00BFA6;
+}
