@@ -1,6 +1,6 @@
 <template>
   <div>
-      <p class="text-center bg-light mt-3"> Created by Fitri</p>
+      <p class="text-center bg-light mt-5"> Created by Fitri</p>
   </div>
 </template>
 

@@ -12,11 +12,11 @@
         <div class="row">
             <div class="col-md-3 mt-2 produk" v-for="makanan in product"  v-bind:key="makanan.id">
                 <div class="card shadow">
-                <img src="../assets/img/nasi-rames.jpg" class="card-img-top">
+                 <img :src=" '../img/' + makanan.gambar " class="img-fluid shadow" />
                 <div class="card-body">
                     <h5>{{ makanan.nama }} </h5>
                     <p class="card-text"> Harga : Rp. {{ makanan.harga }} </p>
-                    <router-link to="/pesan" class="btn btn-success">Pesan</router-link>
+                    <router-link :to="'/makanan/'+makanan.id" class="btn btn-success">Lihat</router-link>
                 </div>
                 </div>
             </div>
