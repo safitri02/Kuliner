@@ -6,7 +6,7 @@
 
         <div class="col-md-4 mt-2" v-for="product in products"  v-bind:key="product.id">
           <div class="card shadow">
-          <img :src=" 'assets/img/' + product.gambar " class="card-img-top">
+          <img src="../assets/img/nasi-rames.jpg" class="card-img-top">
           <div class="card-body">
             <h5>{{ product.nama }} </h5>
             <p class="card-text"> Harga : Rp.{{ product.harga }}</p>
