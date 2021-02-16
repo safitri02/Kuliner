@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Food from '../views/Food.vue'
+import Pesan from '../views/Pesan.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/makanan',
     name: 'Food',
     component: Food
+  },
+  {
+    path: '/makanan:id',
+    name: 'Pesan',
+    component: Pesan
   },
   {
     path: '/about',
