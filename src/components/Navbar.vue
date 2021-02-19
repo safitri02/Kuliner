@@ -12,7 +12,7 @@
                 <div class="navbar-nav ml-auto">
                 <router-link class="nav-link" to="/Keranjang">Keranjang
                  <b-icon-bag></b-icon-bag>
-                  <span class="badge badge-success">{{ jumlah_pesanans.length }}</span>
+                  <span class="badge badge-success">{{ jumlah_pesanan.length }}</span>
                 </router-link>
                 </div>
                 </div>
@@ -29,19 +29,14 @@ export default {
   name: "Navbar",
   data() {
     return {
-      jumlah_pesanans: [],
+      jumlah_pesanan: [],
     };
-  },
-  methods: {
-    setJumlah(data) {
-      this.jumlah_pesanans = data;
-    },
   },
   mounted() {
     axios
       .get("http://localhost:3000/keranjangs")
-      .then((response) => this.setJumlah(response.data))
-      .catch((error) => console.log(error));
+      .then(res => (this.jumlah_pesanan = res.data))
+      .catch(err => console.log(err))
   },
 };
 </script>
